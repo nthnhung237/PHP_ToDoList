@@ -1,0 +1,190 @@
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style-type: none;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+body{
+    color:#555;
+}
+section{
+    clear: both;
+    float: left;
+    width: 100%;
+}
+::selection {
+    background: #FC6D6D;
+    color: #FFF;
+}
+input:focus{
+    outline:2px solid #df72a7;
+}
+/** Khung bao bọc container và row sử dụng chung toàn website **/
+.container{
+    margin: 0 auto;
+    padding: 0;
+    width: 1220px;
+}
+.row{
+	margin: 0 10px;
+}
+/**
+ * CSS cho CONTENT WRAPPER Không thuộc Index==========================================================
+ */
+.content{
+	clear: both;
+	width: 100%;
+	float: left;
+	margin-top:80px;
+	margin-bottom: 20px;
+}
+/**
+ * CSS cho NAV BAR Header==================================================================
+ */
+header{
+	display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+	z-index: 1000;
+	height: 68px;
+	background-color: #FFF;
+	-webkit-box-shadow: 0 2px 4px 0 rgba(50,50,50,.08);
+    box-shadow: 0 2px 4px 0 rgba(50,50,50,.08);
+}
+
+/** Css cho main menu gồm logo và nav  */
+.main-logo{
+	margin: auto;
+	width: 200px;
+	text-align: center;
+}
+.main-logo h1 {
+    color: #ff6d00;
+    font-size: 25px;
+    margin: 5px 0 0 0;
+}
+
+h1 {
+    font-size: 2em;
+    margin: .5em 0;
+    color:#333; /*css để ú **/
+}
+
+nav{
+	float: right;
+	width: 100%;
+	display: contents;
+}
+
+nav ul li{
+	display: inline;
+    margin-right: 20px;
+    margin-top: 17px;
+    float: left;
+    text-decoration: none;
+}
+
+nav li a {
+    color: #555;
+    display: block;
+    line-height: 35px;
+    font-size: 16px;
+    padding: 0;
+}
+
+nav li a:hover{
+	color: #ff6d00;
+}
+
+/* css custom calendar*/
+.calendar {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.demo-topbar {
+  height: 40px;
+  line-height: 40px;
+  padding-left: 1em;
+  background: #eee;
+  border-bottom: 1px solid #ddd;
+  font-family: "Lucida Grande", Helvetica, Arial, Verdana, sans-serif !important;
+  font-size: 14px !important;
+  color: #000 !important; 
+}
+
+.demo-topbar .codepen-button {
+    float: right;
+    margin-top: 7px;
+    margin-right: 7px; 
+}
+
+.codepen-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 26px;
+  line-height: 26px;
+  padding: 0 6px;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 4px;
+  font-family: "Lucida Grande", Helvetica, Arial, Verdana, sans-serif !important;
+  font-size: 11px !important;
+  color: #000 !important;
+  cursor: pointer; 
+}
+
+.codepen-button:after {
+    content: '\02197';
+    vertical-align: middle;
+    margin: -50% 0 -50% 2px; 
+}
+
+.btn {
+	border: none;
+	background: #aaa0;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  width: 100%;
+}
+
+.input_popover {
+  width: 100%;
+}
+
+.gr_btn {
+    text-align: center;
+}
+
+.gr_btn .btn_popover {
+    width: 50px;
+    margin: 10px;
+}
+
+.title_popover {
+  margin-bottom: 0px;
+}
+
+.div_popover {
+  margin: 5px 0px;
+}
+
+.popup{
+
+    position:absolute;
+    top:0px;
+    left:0px;
+    margin:100px auto;
+    width:300px;
+    height:300px;
+    font-family:verdana;
+    font-size:13px;
+    padding:10px;
+    background-color:rgb(240,240,240);
+    border:2px solid grey;
+    z-index:100000000000000000;
+}
