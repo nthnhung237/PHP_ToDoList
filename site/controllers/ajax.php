@@ -36,7 +36,6 @@ require('site/models/home.php');
 
 				$response = array();
 				$response['success'] = 1;
-				$response['id'] = $result;
 
 				echo json_encode($response);
 

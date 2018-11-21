@@ -32,12 +32,11 @@
 
         	$results = mysqli_query( Database::$dbc, $query );
 
-
         	if(!$results){
         		return die("Query {$query}\n<br/> MYSQL Error:".mysqli_error(Database::$dbc));
         	}
         	else{
-        		return $id = $results->insert_id;
+        		return $results;
         	}
 
 		}
@@ -48,7 +47,7 @@
 			intval($id);
 
 			$query = " 	UPDATE List 
-					   	SET Name = " .$list["name"]. ", Start_Day = ".$list["start_day"] .", End_Day = ".$list["end_day"] .", Status_ID = " . $list["status"] . " 
+					   	SET Name = '" .$list["name"]. "', Start_Day = ".$list["start_day"] .", End_Day = ".$list["end_day"] .", Status_ID = " . $list["status"] . " 
 					   	WHERE List_ID = " . $id;
 
         	$results = mysqli_query( Database::$dbc, $query );
